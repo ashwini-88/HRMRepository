@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Suite">
+<groups>
+	<run>
+		<include name="integration"></include>
+	</run>
+</groups>
+  <test thread-count="2" parallel="tests" name="Test">
+    <classes>
+      <class name="corporateModule.CorporateCreatedByHrHead_BaseClass"/>
+      <class name="branchModule.BranchCreatedByHrHead_BaseClass"/>
+      <class name="loginModule_package.CreateEmpAsAssisAndDeleteAsHead_HRM_ST_TC_08_Ext_BaseClass"/>
+      <class name="loginModule_package.CreateEmpAsHead_HRM_ST_TC_01_BaseClass"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
